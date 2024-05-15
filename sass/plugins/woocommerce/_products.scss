@@ -1,0 +1,40 @@
+ul.products {
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+
+	li.product {
+		list-style: none;
+		position: relative;
+		margin-bottom: 2em;
+		justify-content: space-between;
+		
+
+		img {
+			display: block;
+		}
+
+		.button {
+			display: block;
+		}
+
+		.button:active, .button:focus, .button:hover {
+			color: $product-category-selected;
+		}
+
+		.add_to_cart_button{
+			display: none;
+		}
+	}
+}
+
+// 1600px
+@media (min-width: 100em) {
+	ul.products li.product{
+		width: 300px;
+	}
+	ul.products {
+		margin: 1rem;
+	}
+}

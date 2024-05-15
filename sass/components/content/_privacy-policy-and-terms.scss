@@ -1,0 +1,10 @@
+.entry-content {
+    margin: 1rem;
+}
+
+// 1024px
+@media (min-width:64em) {
+    .entry-content {
+        margin: 1rem 3rem;
+    }
+}

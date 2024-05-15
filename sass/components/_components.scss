@@ -1,0 +1,35 @@
+/* Navigation
+--------------------------------------------- */
+@import "navigation/navigation";
+@import "navigation/footer";
+@import "navigation/header";
+/* Posts and pages
+--------------------------------------------- */
+@import "content/posts-and-pages";
+@import "content/about-us-page";
+@import 'content/page_locations';
+@import 'content/product';
+@import 'content/front-page';
+@import 'content/page-contact-page.scss';
+@import 'content/404-page';
+@import 'content/privacy-policy-and-terms';
+
+/* Comments
+--------------------------------------------- */
+@import "comments/comments";
+
+/* Widgets
+--------------------------------------------- */
+@import "widgets/widgets";
+
+/* Media
+--------------------------------------------- */
+@import "media/media";
+
+/* Captions
+--------------------------------------------- */
+@import "media/captions";
+
+/* Galleries
+--------------------------------------------- */
+@import "media/galleries";

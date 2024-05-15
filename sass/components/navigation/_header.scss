@@ -1,0 +1,126 @@
+#masthead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  background-color: #fdfdfd;
+  padding: 0 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+  .custom-logo-link {
+    margin: auto 0;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .menu-toggle {
+    padding: 0;
+  }
+}
+
+a.custom-logo-link {
+  display: flex;
+  align-items: center;
+
+  img.custom-logo {
+    display: block;
+    width: 3rem;
+  }
+}
+
+#site-navigation {
+  position: relative;
+
+  div.menu-header-container {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+
+    ul#primary-menu {
+
+      a {
+        color: #fdfdfd;
+
+        &:hover,
+        &:active,
+        &:focus {
+          text-decoration: 2px underline white;
+          cursor: pointer;
+        }
+
+        svg {
+          fill: #fdfdfd;
+
+          &:hover,
+          &:active,
+          &:focus {
+            cursor: pointer;
+          }
+        }
+      }
+
+      li {
+        padding-left: 1rem;
+        font-size: 18px;
+      }
+
+      @media (min-width: 600px) {
+
+        a {
+          color: #121212;
+
+          &:hover,
+          &:active {
+            text-decoration: 2px underline black;
+            cursor: pointer;
+          }
+
+          svg {
+            fill: #121212;
+
+            &:hover {
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+
+  button.menu-toggle {
+    margin: 0;
+  }
+
+  nav.toggled {
+    display: absolute;
+  }
+
+  .menu-toggle {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  button {
+    background: none;
+    border: none;
+
+    span.close-menu {
+      display: none;
+
+    }
+
+  }
+}
+
+@media (min-width: 48em) {
+  #masthead {
+    padding: 0 5rem;
+  }
+}

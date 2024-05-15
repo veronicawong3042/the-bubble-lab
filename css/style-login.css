@@ -1,0 +1,23 @@
+body.login div#login h1 a,
+body.login div.login h1 a{
+  background-image: url('../images/bubble-lab-logo.png');
+  height: 8rem;
+  width: 8rem;
+  background-size: 8rem 8rem;
+  background-repeat: no-repeat;
+}
+
+body.login div#login form#loginform {
+  border-radius: 40px;
+  font-family: 'Poppins';
+}
+
+
+body.login {
+  background-color: #025E8D;
+}
+
+
+body.login div#login p a{
+  color: black;
+}
